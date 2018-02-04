@@ -2,22 +2,18 @@
 using namespace std;
 int main ()
 {
-	int b;
-	cin>>b;
-	int c=1;
-	int d=b-c;
-	for (int i=0;i<b;i++)
+	int a;
+	cin>>a;
+	for (int i=1;i<=a;i++)
 	{
-		for (int j=0;j<d;j++)
+		for (int j=a-i;j>0;j--)
 		{
 			cout<<".";
 		}
-		for (int k=0;k<c;k++)
+		for (int k=a-i+1;k<=a;k++)
 		{
 			cout<<'*';
 		}
 		cout<<endl;
-		d--;
-		c++;
 	}
 }
